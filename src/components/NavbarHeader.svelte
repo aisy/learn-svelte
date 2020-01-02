@@ -31,7 +31,6 @@
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
-
     font-weight: 700;
   }
 </style>
