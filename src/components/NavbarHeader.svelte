@@ -4,10 +4,10 @@
 
 <style>
   header {
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 6px 25px;
-    position: fixed;
-    top: 0;
     background-color: transparent;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.07);
   }
@@ -17,21 +17,22 @@
     text-transform: uppercase;
     font-size: 1.5em;
     font-weight: 700;
+    cursor: pointer;
   }
 
   .right-menu {
-    float: right;
+    list-style: none;
   }
 
   .right-menu li {
-    float: left;
+    display: inline-block;
+    padding: 8px 20px 0px 0px;
     color: #ff3e00;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
-    list-style: none;
+
     font-weight: 700;
-    padding: 8px 20px 0px 0px;
   }
 </style>
 
