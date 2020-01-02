@@ -1,12 +1,14 @@
 <script>
-  let name = "Ais";
+  let name = "ais";
+
   import NavbarHeader from "../components/NavbarHeader.svelte";
+  import HomeItemLists from "../components/HomeItemLists.svelte";
 </script>
 
 <style>
   main {
     text-align: center;
-    padding: 1em;
+    padding: 0px 25px;
     max-width: 240px;
     margin: 0 auto;
     margin-top: 50px;
@@ -38,4 +40,6 @@
     <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
     to learn how to build Svelte apps.
   </p>
+
+  <HomeItemLists />
 </main>
