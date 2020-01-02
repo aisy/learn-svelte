@@ -1,12 +1,11 @@
 <script>
-  export let color = "#ff3e00";
   export let title = "Button";
 </script>
 
 <style>
   .button-menu {
     border-radius: 20px;
-    /* background-color: #{$color}; */
+    background-color: #ff3e00;
     color: #fff;
     width: 90px;
     margin: 0px;
@@ -20,4 +19,4 @@
   }
 </style>
 
-<button class="button-menu" style="background-color:{color}">{title}</button>
+<button class="button-menu">{title}</button>
