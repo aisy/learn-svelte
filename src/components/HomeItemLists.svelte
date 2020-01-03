@@ -1,5 +1,7 @@
 <script>
   import CardItem from "./CardItem.svelte";
+
+  export let items = [];
 </script>
 
 <style>
@@ -14,10 +16,9 @@
 </style>
 
 <div class="home-list-container">
-  <CardItem />
-  <CardItem />
-  <CardItem />
-  <CardItem />
-  <CardItem />
-  <CardItem />
+  {#each items as item}
+    <CardItem title={item.title} />
+  {:else}
+    <p>Loading...</p>
+  {/each}
 </div>
