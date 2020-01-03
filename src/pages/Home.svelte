@@ -1,8 +1,17 @@
 <script>
-  let name = "ais";
-
+  import { onMount } from "svelte";
   import NavbarHeader from "../components/NavbarHeader.svelte";
   import HomeItemLists from "../components/HomeItemLists.svelte";
+
+  let name = "ais";
+  let dataItem = [];
+
+  onMount(async () => {
+    const res = await fetch(
+      "https://facebook.github.io/react-native/movies.json"
+    );
+    dataItem = await res.json();
+  });
 </script>
 
 <style>
@@ -41,5 +50,5 @@
     to learn how to build Svelte apps.
   </p>
 
-  <HomeItemLists />
+  <HomeItemLists items={dataItem.movies} />
 </main>
