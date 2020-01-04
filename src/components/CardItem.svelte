@@ -47,6 +47,8 @@
 <div class="card">
   {#if img == null}
     <div class="bg-image" />
+  {:else}
+    <img src={img} alt="" />
   {/if}
   <div class="content-card">
     <div class="title">{title}</div>
