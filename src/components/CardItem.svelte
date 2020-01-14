@@ -52,6 +52,11 @@
   {/if}
   <div class="content-card">
     <div class="title">{title}</div>
-    <div class="details">{details}</div>
+    {#if details != null}
+      <div class="details">{details}</div>
+    {/if}
+    {#if price != null}
+      <div class="price">{price}</div>
+    {/if}
   </div>
 </div>
