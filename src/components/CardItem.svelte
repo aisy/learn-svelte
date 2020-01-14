@@ -3,7 +3,6 @@
   export let img;
   export let details =
     "Quis cillum aute mollit sunt voluptate. Veniam commodo reprehenderit magna eu nisi pariatur et aliquip dolore commodo deserunt ad sit.";
-  export let price = "Rp. ";
 </script>
 
 <style>
@@ -54,9 +53,6 @@
     <div class="title">{title}</div>
     {#if details != null}
       <div class="details">{details}</div>
-    {/if}
-    {#if price != null}
-      <div class="price">{price}</div>
     {/if}
   </div>
 </div>
