@@ -2,7 +2,6 @@
   import { onMount } from "svelte";
   import NavbarHeader from "../components/NavbarHeader.svelte";
   import HomeItemLists from "../components/HomeItemLists.svelte";
-  import Skeleton from "../components/SkeletonLoading.svelte";
 
   let name = "ais";
   let dataItem = [];
@@ -52,6 +51,4 @@
   </p>
 
   <HomeItemLists items={dataItem.movies} />
-
-  <Skeleton />
 </main>
