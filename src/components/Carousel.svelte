@@ -1,7 +1,7 @@
 <script>
   // Props
-  export let items = [...Array(10).keys()];
-  export let scrollBy = 3;
+  export let items = [...Array(14).keys()];
+  export let scrollBy = 7;
 
   const paginationFactor = 175;
   const totalPaginationPixels = scrollBy * paginationFactor;
@@ -57,8 +57,9 @@
 
   .layout-button {
     margin-top: 10px;
-    flex: auto;
+    display: flex;
     flex-direction: row;
+    justify-content: flex-end;
   }
 
   .button-move {
@@ -67,6 +68,7 @@
     background-color: #ff3e00;
     width: 50px;
     height: 50px;
+    margin-left: 10px;
   }
 </style>
 
