@@ -1,12 +1,13 @@
-<style lang="scss">
+<style lang="scss" type="text/scss">
   $color-base: #ccc;
   $color-highlight: lighten($color-base, 7%);
 
   .skeleton {
     position: relative;
     overflow: hidden;
-    width: 50%;
-    height: 40px;
+    width: 100%;
+    height: 10px;
+    border-radius: 30px;
     background: $color-base;
 
     &::after {
@@ -22,7 +23,7 @@
         $color-highlight,
         $color-base
       );
-      animation: progress 1s ease-in-out infinite;
+      animation: progress 1.5s ease-in-out infinite;
     }
   }
 
