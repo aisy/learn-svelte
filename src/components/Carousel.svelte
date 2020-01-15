@@ -1,7 +1,7 @@
 <script>
   // Props
   export let items = [...Array(14).keys()];
-  export let scrollBy = 7;
+  export let scrollBy = 1;
 
   const paginationFactor = 175;
   const totalPaginationPixels = scrollBy * paginationFactor;
@@ -32,7 +32,7 @@
   }
 
   .item {
-    min-width: 180px;
+    min-width: 185px;
     height: 200px;
     margin: 0 4px;
     background-color: #ef4322;
@@ -69,6 +69,11 @@
     width: 50px;
     height: 50px;
     margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .button-move:hover {
+    background-color: #c73404;
   }
 </style>
 
@@ -76,7 +81,7 @@
   <div class="items" style="transform: translateX({offset}px);">
     {#each items as item, i}
       <div class="item" style="background-color: hsla({i * 25}deg, 75%, 55%);">
-        {item}
+        {item + 1}
       </div>
     {/each}
   </div>
