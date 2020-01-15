@@ -1,14 +1,16 @@
 <script>
   export let title = "Button";
+  export let buttonWidth = 90;
 </script>
 
 <style>
   .button-menu {
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: #ff3e00;
     color: #fff;
-    width: 90px;
     margin: 0px;
+    width: var(--buttonWidth) px;
+    padding: 10px;
   }
 
   .button-menu:hover {
