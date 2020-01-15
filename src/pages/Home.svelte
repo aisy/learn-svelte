@@ -2,6 +2,8 @@
   import { onMount } from "svelte";
   import NavbarHeader from "../components/NavbarHeader.svelte";
   import HomeItemLists from "../components/HomeItemLists.svelte";
+  import Introductions from "../components/Introductions.svelte";
+  import Carousel from "../components/Carousel.svelte";
 
   let name = "ais";
   let dataItem = [];
@@ -42,13 +44,9 @@
 </style>
 
 <NavbarHeader />
-<main>
-  <h1>Hello {name}!</h1>
-  <p>
-    Visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-    to learn how to build Svelte apps.
-  </p>
+<Introductions />
 
+<main>
+  <Carousel />
   <HomeItemLists items={dataItem.movies} />
 </main>
