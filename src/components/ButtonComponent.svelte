@@ -9,7 +9,6 @@
     background-color: #ff3e00;
     color: #fff;
     margin: 0px;
-    width: var(--buttonWidth) px;
     padding: 10px;
   }
 
@@ -21,4 +20,4 @@
   }
 </style>
 
-<button class="button-menu">{title}</button>
+<button class="button-menu" style="width:{buttonWidth}px;">{title}</button>
